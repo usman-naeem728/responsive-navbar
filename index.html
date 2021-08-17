@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css"><!--font awesome link-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <ul>
+            <li class="logo">JavaScript Projects</li>
+            <li class="button"><span class="fas fa-bars"></span></li>
+            <div class="items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Products</a></li>
+                <li><a href="#">Latest Deals</a></li>
+                <li><a href="#">Contact us</a></li>
+            </div>
+            <li class="searchicon">
+                <input type="search" placeholder="Search">
+                <label class="icon">
+                    <span class="fas fa-search"></span> <!--font aweseome icon--->
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="text1">
+            Responsive Navbar with HTML and CSS
+        </div>
+        <div class="text2">
+            SUBSCRIBE JavaSCript Projects
+        </div>
+    </div>
+    <script>
+        $('.main ul li.button span').click(function () {
+            $('.main ul div.items').toggleClass("show");
+            $('.main ul li.button span').toogleClass("show")
+        });
+    </script>
+</body>
+
+</html>
